@@ -1,3 +1,6 @@
+//used nodejs for the crypto library
+//node day4p2.js
+
 var crypto = require('crypto');
 var count = -1;
 var seed = 'ckczppom';

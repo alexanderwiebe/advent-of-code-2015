@@ -1,3 +1,4 @@
+//just using chrome dev tools to run this
 //setup light grid
 var lightGrid = new Array(1000);
 for(var x = 0; x < 1000; x++){
@@ -43,5 +44,5 @@ for(var x = 0; x < 1000; x++){
 		lightBrightnessCount = lightBrightnessCount + lightGrid[x][y];
 	}
 }
-console.log(lightOnCount);
+console.log(lightBrightnessCount);
 console.log(lightGrid);

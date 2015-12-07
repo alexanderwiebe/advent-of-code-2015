@@ -1,0 +1,25 @@
+//just applied the following regexs on the strings
+
+
+//rough work
+	//regex remove ab, cd, pq, or xy
+	(^.*?ab.*?$\n)|(^.*?cd.*?$\n)|(^.*?pq.*?$\n)|(^.*?xy.*?$\n)
+	//regex find 3 or more vowels
+	^.*?([aeiou].*?){3,}
+	//regex to find double character
+	(.)\2
+	//how to combine them both
+	(?=^.*?([aeiou].*?){3,})(.)\2
+
+//here's the regexs
+
+//part 1
+	//regex 'and' or positive / negative lookbehind/ahead operators
+	//for each (?=.) or (?!.) it starts at the start of the line
+	(?=.*?(.)\1)  //two characters that are the same aa, bb
+	(?=^.*?([aeiou].*?){3,})  //three vowels
+	(?!(^.*?ab.*?$\n)|(^.*?cd.*?$\n)|(^.*?pq.*?$\n)|(^.*?xy.*?$\n))  //not ab, cd pq, or xy
+
+//part 2
+	(?=^.*?(..).*?\1) //two characters repeating twice az in azysdfazs
+	(?=^.*?(.).\2)^.*$ //two characters surrounding another xxyxx  added ^.*$ to highlight

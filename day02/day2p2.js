@@ -1,3 +1,5 @@
+//just using chrome dev tools to run this
+
 var totalRibbon = 0;
 for(var present in input){
 	var dims = input[present].split('x').map(function(element){return parseInt(element);}).sort(function(a, b){return a-b;});

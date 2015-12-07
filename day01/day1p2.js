@@ -1,3 +1,4 @@
+//just using chrome dev tools to run this
 var input = ''; //day1input
 var floor = 0;
 var charIndex = 0;
