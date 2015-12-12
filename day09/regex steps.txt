@@ -1,0 +1,14 @@
+Regex
+take 
+Tristram to AlphaCentauri = 34
+and convert to:
+['Tristram', 'AlphaCentauri', 34],
+
+find:
+^(.*?) to (.*?) = (\d*?)$
+replace:
+['$1', '$2', $3],
+
+
+unique locations
+var locations = ['Tristram', 'AlphaCentauri', 'Snowdin', 'Tambi', 'Faerun', 'Norrath', 'Straylight'];
