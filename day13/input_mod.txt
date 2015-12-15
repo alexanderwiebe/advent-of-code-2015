@@ -1,0 +1,77 @@
+//lots of regex, then formatted so input.Alice.George would return Alice's happines beside George
+var peeps = ['Alice', 'Bob', 'Carol', 'David', 'Eric', 'Frank', 'George', 'Mallory'];
+var input = 
+{
+	'Alice':{
+		'Bob': 54,
+		'Carol': -81,
+		'David': -42,
+		'Eric': 89,
+		'Frank': -89,
+		'George': 97,
+		'Mallory': -94
+	},
+	'Bob':{
+		'Alice': 3,
+		'Carol': -70,
+		'David': -31,
+		'Eric': 72,
+		'Frank': -25,
+		'George': -95,
+		'Mallory': 11
+	},
+	'Carol':{
+		'Alice': -83,
+		'Bob': 8,
+		'David': 35,
+		'Eric': 10,
+		'Frank': 61,
+		'George': 10,
+		'Mallory': 29
+	},
+	'David':{
+		'Alice': 67,
+		'Bob': 25,
+		'Carol': 48,
+		'Eric': -65,
+		'Frank': 8,
+		'George': 84,
+		'Mallory': 9
+	},
+	'Eric': {
+		'Alice': -51,
+		'Bob': -39,
+		'Carol': 84,
+		'David': -98,
+		'Frank': -20,
+		'George': -6,
+		'Mallory': 60
+	},
+	'Frank': {
+		'Alice': 51,
+		'Bob': 79,
+		'Carol': 88,
+		'David': 33,
+		'Eric': 43,
+		'George': 77,
+		'Mallory': -3
+	},
+	'George': {
+		'Alice': -14,
+		'Bob': -12,
+		'Carol': -52,
+		'David': 14,
+		'Eric': -62,
+		'Frank': -18,
+		'Mallory': -17
+	},
+	'Mallory': {
+		'Alice': -36,
+		'Bob': 76,
+		'Carol': -34,
+		'David': 37,
+		'Eric': 40,
+		'Frank': 18,
+		'George': 7
+	}
+}
